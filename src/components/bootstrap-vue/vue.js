@@ -1,4 +1,4 @@
-import Vue from 'vue';
+import Vue from '@vue/compat';
 import { mergeData as mergeFunc } from 'vue-functional-data-merge';
 
 // --- Constants ---

@@ -1,15 +1,25 @@
+<script setup>
+    import { ref } from 'vue';
+    const isModalOpen = ref(false);
+
+    const toggleModal = () => {
+        isModalOpen.value = !isModalOpen.value;
+    };
+</script>
+
 <template>
     <div class="about">
-        <h1>This is an about page</h1>
+        <p>This is an about page</p>
+        <div>
+            <b-skeleton width="85%"></b-skeleton>
+            <b-skeleton width="55%"></b-skeleton>
+            <b-skeleton width="70%"></b-skeleton>
+        </div>
+
+        <button @click="toggleModal">Open Modal</button>
+
+        <b-modal id="modal-1" title="BootstrapVue" v-model="isModalOpen">
+            <p class="my-4">Hello from modal!</p>
+        </b-modal>
     </div>
 </template>
-
-<style>
-    @media (min-width: 1024px) {
-        .about {
-            min-height: 100vh;
-            display: flex;
-            align-items: center;
-        }
-    }
-</style>
