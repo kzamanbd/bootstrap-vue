@@ -31,7 +31,7 @@ export const BButtonClose = /*#__PURE__*/ extend({
         const $scopedSlots = scopedSlots || {};
 
         const componentData = {
-            staticClass: 'close',
+            staticClass: 'close btn-close',
             class: {
                 [`text-${props.textVariant}`]: props.textVariant
             },
