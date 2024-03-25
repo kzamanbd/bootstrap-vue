@@ -1,8 +1,8 @@
-import { BSkeleton } from './skeleton/skeleton';
-import { BSkeletonImg } from './skeleton/image';
-import { BAspect } from './aspect';
-import { BModal } from './modal';
-import { BButton } from './button/button';
+import { BSkeleton } from './components/skeleton/skeleton';
+import { BSkeletonImg } from './components/skeleton/image';
+import { BAspect } from './components/aspect';
+import { BModal } from './components/modal';
+import { BButton } from './components/button/button';
 
 export default {
     install(Vue) {

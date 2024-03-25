@@ -1,15 +1,19 @@
-import { extend, isVue3, Vue } from '../vue';
-import { NAME_TRANSPORTER, NAME_TRANSPORTER_TARGET } from '../constants/components';
-import { IS_BROWSER } from '../constants/env';
-import { PROP_TYPE_ARRAY_FUNCTION, PROP_TYPE_BOOLEAN, PROP_TYPE_STRING } from '../constants/props';
-import { HTMLElement } from '../constants/safe-types';
-import { concat } from '../utils/array';
-import { removeNode, select } from '../utils/dom';
-import { identity } from '../utils/identity';
-import { isFunction, isString } from '../utils/inspect';
-import { normalizeSlotMixin } from '../mixins/normalize-slot';
-import { makeProp } from '../utils/props';
-import { createNewChildComponent } from '../utils/create-new-child-component';
+import { extend, isVue3, Vue } from '../../vue';
+import { NAME_TRANSPORTER, NAME_TRANSPORTER_TARGET } from '../../constants/components';
+import { IS_BROWSER } from '../../constants/env';
+import {
+    PROP_TYPE_ARRAY_FUNCTION,
+    PROP_TYPE_BOOLEAN,
+    PROP_TYPE_STRING
+} from '../../constants/props';
+import { HTMLElement } from '../../constants/safe-types';
+import { concat } from '../../utils/array';
+import { removeNode, select } from '../../utils/dom';
+import { identity } from '../../utils/identity';
+import { isFunction, isString } from '../../utils/inspect';
+import { normalizeSlotMixin } from '../../mixins/normalize-slot';
+import { makeProp } from '../../utils/props';
+import { createNewChildComponent } from '../../utils/create-new-child-component';
 
 // --- Helper components ---
 

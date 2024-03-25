@@ -1,23 +1,23 @@
-import { extend } from '../vue';
-import { NAME_LINK } from '../constants/components';
-import { EVENT_NAME_CLICK } from '../constants/events';
+import { extend } from '../../vue';
+import { NAME_LINK } from '../../constants/components';
+import { EVENT_NAME_CLICK } from '../../constants/events';
 import {
     PROP_TYPE_ARRAY_STRING,
     PROP_TYPE_BOOLEAN,
     PROP_TYPE_OBJECT_STRING,
     PROP_TYPE_STRING
-} from '../constants/props';
-import { concat } from '../utils/array';
-import { attemptBlur, attemptFocus, isTag } from '../utils/dom';
-import { getRootEventName, stopEvent } from '../utils/events';
-import { isBoolean, isEvent, isFunction, isUndefined } from '../utils/inspect';
-import { omit, sortKeys } from '../utils/object';
-import { makeProp, makePropsConfigurable, pluckProps } from '../utils/props';
-import { computeHref, computeRel, computeTag, isRouterLink } from '../utils/router';
-import { attrsMixin } from '../mixins/attrs';
-import { listenOnRootMixin } from '../mixins/listen-on-root';
-import { listenersMixin } from '../mixins/listeners';
-import { normalizeSlotMixin } from '../mixins/normalize-slot';
+} from '../../constants/props';
+import { concat } from '../../utils/array';
+import { attemptBlur, attemptFocus, isTag } from '../../utils/dom';
+import { getRootEventName, stopEvent } from '../../utils/events';
+import { isBoolean, isEvent, isFunction, isUndefined } from '../../utils/inspect';
+import { omit, sortKeys } from '../../utils/object';
+import { makeProp, makePropsConfigurable, pluckProps } from '../../utils/props';
+import { computeHref, computeRel, computeTag, isRouterLink } from '../../utils/router';
+import { attrsMixin } from '../../mixins/attrs';
+import { listenOnRootMixin } from '../../mixins/listen-on-root';
+import { listenersMixin } from '../../mixins/listeners';
+import { normalizeSlotMixin } from '../../mixins/normalize-slot';
 
 // --- Constants ---
 

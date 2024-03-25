@@ -4,11 +4,11 @@
 // the transition has finished the enter transition
 // (show and fade classes are only applied during transition)
 
-import { extend, mergeData } from '../vue';
-import { NAME_TRANSITION } from '../constants/components';
-import { PROP_TYPE_BOOLEAN, PROP_TYPE_OBJECT, PROP_TYPE_STRING } from '../constants/props';
-import { isPlainObject } from '../utils/inspect';
-import { makeProp } from '../utils/props';
+import { extend, mergeData } from '../../vue';
+import { NAME_TRANSITION } from '../../constants/components';
+import { PROP_TYPE_BOOLEAN, PROP_TYPE_OBJECT, PROP_TYPE_STRING } from '../../constants/props';
+import { isPlainObject } from '../../utils/inspect';
+import { makeProp } from '../../utils/props';
 
 // --- Constants ---
 

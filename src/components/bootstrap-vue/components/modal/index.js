@@ -1,9 +1,9 @@
 import mitt from 'mitt';
-import { extend, COMPONENT_UID_KEY } from '../vue';
+import { extend, COMPONENT_UID_KEY } from '../../vue';
 
 const emitter = mitt();
-import { NAME_MODAL } from '../constants/components';
-import { IS_BROWSER } from '../constants/env';
+import { NAME_MODAL } from '../../constants/components';
+import { IS_BROWSER } from '../../constants/env';
 import {
     EVENT_NAME_CANCEL,
     EVENT_NAME_CHANGE,
@@ -15,16 +15,16 @@ import {
     EVENT_NAME_SHOWN,
     EVENT_NAME_TOGGLE,
     EVENT_OPTIONS_NO_CAPTURE
-} from '../constants/events';
-import { CODE_ESC } from '../constants/key-codes';
+} from '../../constants/events';
+import { CODE_ESC } from '../../constants/key-codes';
 import {
     PROP_TYPE_ARRAY_OBJECT_STRING,
     PROP_TYPE_ARRAY_STRING,
     PROP_TYPE_BOOLEAN,
     PROP_TYPE_OBJECT,
     PROP_TYPE_STRING
-} from '../constants/props';
-import { HTMLElement } from '../constants/safe-types';
+} from '../../constants/props';
+import { HTMLElement } from '../../constants/safe-types';
 import {
     SLOT_NAME_DEFAULT,
     SLOT_NAME_MODAL_BACKDROP,
@@ -34,8 +34,8 @@ import {
     SLOT_NAME_MODAL_HEADER_CLOSE,
     SLOT_NAME_MODAL_OK,
     SLOT_NAME_MODAL_TITLE
-} from '../constants/slots';
-import { arrayIncludes, concat } from '../utils/array';
+} from '../../constants/slots';
+import { arrayIncludes, concat } from '../../utils/array';
 import {
     attemptFocus,
     closest,
@@ -44,26 +44,26 @@ import {
     getTabables,
     requestAF,
     select
-} from '../utils/dom';
-import { getRootActionEventName, getRootEventName, eventOn, eventOff } from '../utils/events';
-import { htmlOrText } from '../utils/html';
-import { identity } from '../utils/identity';
-import { isString, isUndefinedOrNull } from '../utils/inspect';
-import { makeModelMixin } from '../utils/modal';
-import { sortKeys } from '../utils/object';
+} from '../../utils/dom';
+import { getRootActionEventName, getRootEventName, eventOn, eventOff } from '../../utils/events';
+import { htmlOrText } from '../../utils/html';
+import { identity } from '../../utils/identity';
+import { isString, isUndefinedOrNull } from '../../utils/inspect';
+import { makeModelMixin } from '../../utils/modal';
+import { sortKeys } from '../../utils/object';
 
-import { observeDom } from '../utils/observe-dom';
-import { makeProp, makePropsConfigurable } from '../utils/props';
-import { attrsMixin } from '../mixins/attrs';
-import { idMixin, props as idProps } from '../mixins/id';
-import { listenOnDocumentMixin } from '../mixins/listen-on-document';
-import { listenOnRootMixin } from '../mixins/listen-on-root';
-import { listenOnWindowMixin } from '../mixins/listen-on-window';
-import { normalizeSlotMixin } from '../mixins/normalize-slot';
-import { scopedStyleMixin } from '../mixins/scoped-style';
+import { observeDom } from '../../utils/observe-dom';
+import { makeProp, makePropsConfigurable } from '../../utils/props';
+import { attrsMixin } from '../../mixins/attrs';
+import { idMixin, props as idProps } from '../../mixins/id';
+import { listenOnDocumentMixin } from '../../mixins/listen-on-document';
+import { listenOnRootMixin } from '../../mixins/listen-on-root';
+import { listenOnWindowMixin } from '../../mixins/listen-on-window';
+import { normalizeSlotMixin } from '../../mixins/normalize-slot';
+import { scopedStyleMixin } from '../../mixins/scoped-style';
 
-import { BButton } from '../button/button';
-import { BButtonClose } from '../button/button-close';
+import { BButton } from '../../components/button/button';
+import { BButtonClose } from '../../components/button/button-close';
 import { BVTransition } from '../transition/bv-transition';
 import { BVTransporter } from '../transporter/transporter';
 import { BvModalEvent } from './helpers/bv-modal-event.class';

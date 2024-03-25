@@ -1,11 +1,11 @@
-import { extend } from './vue';
-import { NAME_ASPECT } from './constants/components';
-import { PROP_TYPE_NUMBER_STRING, PROP_TYPE_STRING } from './constants/props';
-import { RX_ASPECT, RX_ASPECT_SEPARATOR } from './constants/regex';
-import { mathAbs } from './utils/math';
-import { toFloat } from './utils/number';
-import { makeProp, makePropsConfigurable } from './utils/props';
-import { normalizeSlotMixin } from './mixins/normalize-slot';
+import { extend } from '../vue';
+import { NAME_ASPECT } from '../constants/components';
+import { PROP_TYPE_NUMBER_STRING, PROP_TYPE_STRING } from '../constants/props';
+import { RX_ASPECT, RX_ASPECT_SEPARATOR } from '../constants/regex';
+import { mathAbs } from '../utils/math';
+import { toFloat } from '../utils/number';
+import { makeProp, makePropsConfigurable } from '../utils/props';
+import { normalizeSlotMixin } from '../mixins/normalize-slot';
 
 // --- Constants ---
 const CLASS_NAME = 'b-aspect';

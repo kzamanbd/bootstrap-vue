@@ -1,15 +1,15 @@
-import { extend, mergeData } from '../vue';
-import { NAME_BUTTON } from '../constants/components';
-import { CODE_ENTER, CODE_SPACE } from '../constants/key-codes';
-import { PROP_TYPE_BOOLEAN, PROP_TYPE_STRING } from '../constants/props';
-import { concat } from '../utils/array';
-import { addClass, isTag, removeClass } from '../utils/dom';
-import { stopEvent } from '../utils/events';
-import { isBoolean, isEvent, isFunction } from '../utils/inspect';
-import { omit, sortKeys } from '../utils/object';
-import { makeProp, makePropsConfigurable, pluckProps } from '../utils/props';
+import { extend, mergeData } from '../../vue';
+import { NAME_BUTTON } from '../../constants/components';
+import { CODE_ENTER, CODE_SPACE } from '../../constants/key-codes';
+import { PROP_TYPE_BOOLEAN, PROP_TYPE_STRING } from '../../constants/props';
+import { concat } from '../../utils/array';
+import { addClass, isTag, removeClass } from '../../utils/dom';
+import { stopEvent } from '../../utils/events';
+import { isBoolean, isEvent, isFunction } from '../../utils/inspect';
+import { omit, sortKeys } from '../../utils/object';
+import { makeProp, makePropsConfigurable, pluckProps } from '../../utils/props';
 
-import { isLink as isLinkStrict } from '../utils/router';
+import { isLink as isLinkStrict } from '../../utils/router';
 import { BLink, props as BLinkProps } from '../link/link';
 
 // --- Props ---

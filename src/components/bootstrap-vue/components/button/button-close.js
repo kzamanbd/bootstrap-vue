@@ -1,11 +1,11 @@
-import { extend, mergeData } from '../vue';
-import { NAME_BUTTON_CLOSE } from '../constants/components';
-import { PROP_TYPE_BOOLEAN, PROP_TYPE_STRING } from '../constants/props';
-import { SLOT_NAME_DEFAULT } from '../constants/slots';
-import { stopEvent } from '../utils/events';
-import { isEvent } from '../utils/inspect';
-import { makeProp, makePropsConfigurable } from '../utils/props';
-import { hasNormalizedSlot, normalizeSlot } from '../utils/normalize-slot';
+import { extend, mergeData } from '../../vue';
+import { NAME_BUTTON_CLOSE } from '../../constants/components';
+import { PROP_TYPE_BOOLEAN, PROP_TYPE_STRING } from '../../constants/props';
+import { SLOT_NAME_DEFAULT } from '../../constants/slots';
+import { stopEvent } from '../../utils/events';
+import { isEvent } from '../../utils/inspect';
+import { makeProp, makePropsConfigurable } from '../../utils/props';
+import { hasNormalizedSlot, normalizeSlot } from '../../utils/normalize-slot';
 
 // --- Props ---
 

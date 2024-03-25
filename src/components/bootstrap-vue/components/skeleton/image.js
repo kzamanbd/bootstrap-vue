@@ -1,7 +1,7 @@
-import { extend, mergeData } from '../vue';
-import { NAME_SKELETON_IMG } from '../constants/components';
-import { PROP_TYPE_BOOLEAN, PROP_TYPE_STRING } from '../constants/props';
-import { makeProp, makePropsConfigurable } from '../utils/props';
+import { extend, mergeData } from '../../vue';
+import { NAME_SKELETON_IMG } from '../../constants/components';
+import { PROP_TYPE_BOOLEAN, PROP_TYPE_STRING } from '../../constants/props';
+import { makeProp, makePropsConfigurable } from '../../utils/props';
 
 import { BAspect } from '../aspect';
 import { BSkeleton } from './skeleton';

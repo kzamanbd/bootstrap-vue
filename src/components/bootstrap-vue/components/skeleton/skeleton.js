@@ -1,7 +1,7 @@
-import { extend, mergeData } from '../vue';
-import { NAME_SKELETON } from '../constants/components';
-import { PROP_TYPE_STRING } from '../constants/props';
-import { makeProp, makePropsConfigurable } from '../utils/props';
+import { extend, mergeData } from '../../vue';
+import { NAME_SKELETON } from '../../constants/components';
+import { PROP_TYPE_STRING } from '../../constants/props';
+import { makeProp, makePropsConfigurable } from '../../utils/props';
 
 import './skeleton.scss';
 // --- Props ---

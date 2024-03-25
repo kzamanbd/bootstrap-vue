@@ -1,5 +1,5 @@
-import { BvEvent } from '../../utils/bv-event.class';
-import { defineProperties, readonlyDescriptor } from '../../utils/object';
+import { BvEvent } from '../../../utils/bv-event.class';
+import { defineProperties, readonlyDescriptor } from '../../../utils/object';
 
 class BvModalEvent extends BvEvent {
     constructor(type, eventInit = {}) {

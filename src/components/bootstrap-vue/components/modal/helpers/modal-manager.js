@@ -3,8 +3,8 @@
  * Handles controlling modal stacking zIndexes and body adjustments/classes
  */
 
-import { extend } from '../../vue';
-import { IS_BROWSER } from '../../constants/env';
+import { extend } from '../../../vue';
+import { IS_BROWSER } from '../../../constants/env';
 import {
     addClass,
     getAttr,
@@ -18,9 +18,9 @@ import {
     selectAll,
     setAttr,
     setStyle
-} from '../../utils/dom';
-import { isNull } from '../../utils/inspect';
-import { toFloat, toInteger } from '../../utils/number';
+} from '../../../utils/dom';
+import { isNull } from '../../../utils/inspect';
+import { toFloat, toInteger } from '../../../utils/number';
 
 // --- Constants ---
 

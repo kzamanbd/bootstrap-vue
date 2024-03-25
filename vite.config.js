@@ -11,7 +11,8 @@ export default defineConfig({
             template: {
                 compilerOptions: {
                     compatConfig: {
-                        MODE: 2
+                        MODE: 2,
+                        WATCH_ARRAY: false
                     }
                 }
             }
