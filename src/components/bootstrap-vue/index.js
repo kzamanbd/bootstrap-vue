@@ -1,15 +1,18 @@
-import { BSkeleton } from './components/skeleton/skeleton';
-import { BSkeletonImg } from './components/skeleton/image';
-import { BAspect } from './components/aspect';
-import { BModal } from './components/modal';
-import { BButton } from './components/button/button';
+import { installFactory } from './utils/plugins';
+import { componentsPlugin } from './components';
+import { directivesPlugin } from './directives';
 
-export default {
-    install(Vue) {
-        Vue.component('BAspect', BAspect);
-        Vue.component('BSkeleton', BSkeleton);
-        Vue.component('BSkeletonImg', BSkeletonImg);
-        Vue.component('BModal', BModal);
-        Vue.component('BButton', BButton);
+const NAME = 'BootstrapVue';
+
+// --- BootstrapVue installer ---
+const install = /*#__PURE__*/ installFactory({
+    plugins: {
+        componentsPlugin,
+        directivesPlugin
     }
-};
+});
+
+// --- BootstrapVue plugin ---
+const BootstrapVue = /*#__PURE__*/ { install, NAME };
+
+export default BootstrapVue;

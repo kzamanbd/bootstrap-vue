@@ -5,8 +5,7 @@
 import BootstrapVue from '@/components/bootstrap-vue';
 
 export default {
-    // eslint-disable-next-line no-unused-vars
-    install(app) {
-        app.use(BootstrapVue);
+    install(Vue) {
+        Vue.use(BootstrapVue);
     }
 };
