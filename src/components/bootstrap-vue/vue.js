@@ -1,14 +1,16 @@
 import Vue from 'vue';
-import { mergeData } from 'vue-functional-data-merge';
+import { mergeData as mergeFunc } from 'vue-functional-data-merge';
 
 // --- Constants ---
-const COMPONENT_UID_KEY = '_uid';
+export const COMPONENT_UID_KEY = '_uid';
 
-const isVue3 = Vue.version.startsWith('3');
+export const mergeData = mergeFunc;
+
+export const isVue3 = Vue.version.startsWith('3');
 
 export const REF_FOR_KEY = isVue3 ? 'ref_for' : 'refInFor';
 
-const ALLOWED_FIELDS_IN_DATA = [
+export const ALLOWED_FIELDS_IN_DATA = [
     'class',
     'staticClass',
     'style',
@@ -126,6 +128,6 @@ if (isVue3) {
     }.bind(Vue);
 }
 
-const nextTick = Vue.nextTick;
+export const nextTick = Vue.nextTick;
 
-export { COMPONENT_UID_KEY, Vue, mergeData, isVue3, nextTick, extend };
+export { Vue, extend };
