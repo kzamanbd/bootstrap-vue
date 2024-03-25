@@ -12,6 +12,7 @@
     },
     "dependencies": {
         "bootstrap": "^5.3.3",
+        "mitt": "^3.0.1",
         "vue": "^3.4.21",
         "vue-functional-data-merge": "^3.1.0",
         "vue-router": "^4.3.0"
@@ -23,6 +24,7 @@
         "eslint": "^8.49.0",
         "eslint-plugin-vue": "^9.17.0",
         "prettier": "^3.0.3",
+        "sass": "^1.72.0",
         "vite": "^5.1.6",
         "vite-plugin-vue-devtools": "^7.0.18"
     }
