@@ -1,4 +1,4 @@
-import { Vue, extend, isVue3 } from '../vue';
+import { extend, isVue3, Vue } from '../vue';
 import { NAME_TRANSPORTER, NAME_TRANSPORTER_TARGET } from '../constants/components';
 import { IS_BROWSER } from '../constants/env';
 import { PROP_TYPE_ARRAY_FUNCTION, PROP_TYPE_BOOLEAN, PROP_TYPE_STRING } from '../constants/props';

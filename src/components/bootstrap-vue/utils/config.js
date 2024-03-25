@@ -1,4 +1,4 @@
-import Vue from 'vue';
+import { Vue } from '../vue';
 import { DEFAULT_BREAKPOINT, PROP_NAME } from '../constants/config';
 import { cloneDeep } from './clone-deep';
 import { memoize } from './memoize';

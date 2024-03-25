@@ -1,5 +1,4 @@
-import Vue from 'vue';
-const isVue3 = Vue.version.startsWith('3');
+import { isVue3 } from '../vue';
 
 export const EVENT_NAME_ACTIVATE_TAB = 'activate-tab';
 export const EVENT_NAME_BLUR = 'blur';
