@@ -46,5 +46,39 @@
             <b-modal id="modal-sm" size="sm" title="Small Modal">Hello Small Modal!</b-modal>
         </div>
         <BootstrapModal />
+
+        <!-- collapse test -->
+        <div>
+            <b-button v-b-toggle.collapse-1 variant="primary">Toggle Collapse</b-button>
+            <b-collapse id="collapse-1" class="mt-2">
+                <div class="card card-body">
+                    <p class="card-text">Collapse contents Here</p>
+                    <b-button v-b-toggle.collapse-1-inner size="sm">Toggle Inner Collapse</b-button>
+                    <b-collapse id="collapse-1-inner" class="mt-2">
+                        <div class="card card-body">Hello!</div>
+                    </b-collapse>
+                </div>
+            </b-collapse>
+            <div class="my-4">
+                <!-- Via multiple directive modifiers -->
+                <b-button v-b-toggle.collapse-a.collapse-b>Toggle Collapse A and B</b-button>
+
+                <!-- Via space separated string of IDs passed to directive value -->
+                <b-button v-b-toggle="'collapse-a collapse-b'">Toggle Collapse A and B</b-button>
+
+                <!-- Via array of string IDs passed to directive value -->
+                <b-button v-b-toggle="['collapse-a', 'collapse-b']"
+                    >Toggle Collapse A and B</b-button
+                >
+
+                <!-- Elements to collapse -->
+                <b-collapse id="collapse-a" class="mt-2">
+                    <div class="card card-body">I am collapsible content A!</div>
+                </b-collapse>
+                <b-collapse id="collapse-b" class="mt-2">
+                    <div class="card card-body">I am collapsible content B!</div>
+                </b-collapse>
+            </div>
+        </div>
     </div>
 </template>

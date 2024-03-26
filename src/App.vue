@@ -12,7 +12,7 @@
 
             <nav>
                 <RouterLink to="/">Home</RouterLink>
-                <RouterLink to="/modal">Modal</RouterLink>
+                <RouterLink to="/bootstrap">Bootstrap</RouterLink>
             </nav>
         </div>
     </header>
