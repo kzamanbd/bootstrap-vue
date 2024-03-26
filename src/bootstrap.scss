@@ -1,5 +1,7 @@
 @import "../node_modules/bootstrap/scss/bootstrap";
 
+@import './components/bootstrap-vue/bootstrap';
+
 .modal-backdrop {
     opacity: $modal-backdrop-opacity;
 }
