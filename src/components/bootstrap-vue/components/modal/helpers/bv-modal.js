@@ -95,13 +95,13 @@ const plugin = (Vue) => {
             // Self destruct if parent destroyed
             this.bvParent.$once(HOOK_EVENT_NAME_DESTROYED, handleDestroy);
             // Self destruct after hidden
-            emitter.once(EVENT_NAME_HIDDEN, handleDestroy);
+            emitter.emit(EVENT_NAME_HIDDEN, handleDestroy);
             // Self destruct on route change
             /* istanbul ignore if */
             if (this.$router && this.$route) {
                 // Destroy ourselves if route changes
                 /* istanbul ignore next */
-                emitter.once(HOOK_EVENT_NAME_BEFORE_DESTROY, this.$watch('$router', handleDestroy));
+                emitter.emit(HOOK_EVENT_NAME_BEFORE_DESTROY, this.$watch('$router', handleDestroy));
             }
             // Show the `BMsgBox`
             this.show();
