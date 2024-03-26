@@ -13,8 +13,13 @@
         <p>This is an about page</p>
         <div>
             <b-skeleton width="85%"></b-skeleton>
-            <b-skeleton width="55%"></b-skeleton>
-            <b-skeleton width="70%"></b-skeleton>
+            <b-skeleton animation="fade" width="85%"></b-skeleton>
+            <b-skeleton animation="fade" width="70%"></b-skeleton>
+            <b-skeleton-table
+                :rows="5"
+                :columns="4"
+                :table-props="{ bordered: true, striped: true }"
+            ></b-skeleton-table>
         </div>
 
         <b-button @click="toggleModal">Open Modal</b-button>
