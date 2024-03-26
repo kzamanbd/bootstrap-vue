@@ -1,5 +1,4 @@
 import mitt from 'mitt';
-const emitter = mitt();
 // Plugin for adding `$bvModal` property to all Vue instances
 import { NAME_MODAL, NAME_MSG_BOX } from '../../../constants/components';
 import {
@@ -28,6 +27,8 @@ import { warn, warnNotClient, warnNoPromiseSupport } from '../../../utils/warn';
 import { createNewChildComponent } from '../../../utils/create-new-child-component';
 import { getEventRoot } from '../../../utils/get-event-root';
 import { BModal, props as modalProps } from '../modal';
+
+const emitter = mitt();
 
 // --- Constants ---
 
@@ -273,6 +274,7 @@ const plugin = (Vue) => {
                         NAME_MODAL
                     );
                 }
+                console.log('PROP_NAME_PRIV', this[PROP_NAME_PRIV]);
                 return this[PROP_NAME_PRIV];
             }
         });
