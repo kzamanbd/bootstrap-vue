@@ -5,6 +5,7 @@
     const toggleModal = () => {
         isModalOpen.value = !isModalOpen.value;
     };
+    import BootstrapModal from './BootstrapModal.vue';
 </script>
 
 <template>
@@ -44,5 +45,6 @@
             <b-modal id="modal-lg" size="lg" title="Large Modal">Hello Large Modal!</b-modal>
             <b-modal id="modal-sm" size="sm" title="Small Modal">Hello Small Modal!</b-modal>
         </div>
+        <BootstrapModal />
     </div>
 </template>
