@@ -7,7 +7,7 @@ import App from './App.vue';
 import router from './router';
 import { BootstrapVue } from '@/components/bootstrap-vue';
 
+Vue.use(BootstrapVue);
 const app = createApp(App);
 app.use(router);
-Vue.use(BootstrapVue);
 app.mount('#app');
