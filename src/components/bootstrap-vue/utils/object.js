@@ -5,8 +5,7 @@ import { isObject } from './inspect';
 export const assign = (...args) => Object.assign(...args);
 export const create = (proto, optionalProps) => Object.create(proto, optionalProps);
 export const defineProperties = (obj, props) => Object.defineProperties(obj, props);
-export const defineProperty = (obj, prop, descriptor) =>
-    Object.defineProperty(obj, prop, descriptor);
+export const defineProperty = (obj, prop, des) => Object.defineProperty(obj, prop, des);
 export const freeze = (obj) => Object.freeze(obj);
 export const getOwnPropertyNames = (obj) => Object.getOwnPropertyNames(obj);
 export const getOwnPropertyDescriptor = (obj, prop) => Object.getOwnPropertyDescriptor(obj, prop);
