@@ -12,6 +12,7 @@
 
             <nav>
                 <RouterLink to="/">Home</RouterLink>
+                <a href="https://bootstrap-vue-zeta.vercel.app" target="_blank">Github Repo</a>
                 <RouterLink to="/bootstrap">Bootstrap</RouterLink>
             </nav>
         </div>
