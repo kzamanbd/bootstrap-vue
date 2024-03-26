@@ -274,7 +274,6 @@ const plugin = (Vue) => {
                         NAME_MODAL
                     );
                 }
-                console.log('PROP_NAME_PRIV', this[PROP_NAME_PRIV]);
                 return this[PROP_NAME_PRIV];
             }
         });
