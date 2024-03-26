@@ -52,6 +52,9 @@
                         console.error(err);
                     });
             }
+        },
+        mounted() {
+            console.log('mounted', this, this.$bvModal);
         }
     };
 </script>

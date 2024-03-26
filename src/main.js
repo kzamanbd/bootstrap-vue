@@ -5,11 +5,9 @@ import Vue from '@vue/compat';
 import { createApp } from 'vue';
 import App from './App.vue';
 import router from './router';
-import plugins from './plugins';
+import { BootstrapVue } from '@/components/bootstrap-vue';
 
 const app = createApp(App);
-
-Vue.use(plugins);
 app.use(router);
-
+Vue.use(BootstrapVue);
 app.mount('#app');
