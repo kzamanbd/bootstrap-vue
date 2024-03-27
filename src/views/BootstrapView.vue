@@ -28,7 +28,7 @@
             <p class="my-4">Hello from modal!</p>
         </b-modal>
 
-        <div class="d-flex gap-4 my-4">
+        <div class="d-flex gap-2 my-2">
             <!-- Using modifiers -->
             <b-button v-b-modal.my-modal>Show Modal</b-button>
             <!-- Using value -->
@@ -39,7 +39,7 @@
                 <p class="my-4">Hello From My Modal!</p>
             </b-modal>
         </div>
-        <div class="d-flex gap-4 my-4">
+        <div class="d-flex gap-2 my-2">
             <b-button v-b-modal.modal-xl variant="primary">xl modal</b-button>
             <b-button v-b-modal.modal-lg variant="primary">lg modal</b-button>
             <b-button v-b-modal.modal-sm variant="primary">sm modal</b-button>
@@ -64,17 +64,19 @@
                     </b-collapse>
                 </div>
             </b-collapse>
-            <div class="my-4">
+            <div class="my-2">
                 <!-- Via multiple directive modifiers -->
                 <b-button v-b-toggle.collapse-a.collapse-b>Toggle Collapse A and B</b-button>
 
                 <!-- Via space separated string of IDs passed to directive value -->
-                <b-button v-b-toggle="'collapse-a collapse-b'">Toggle Collapse A and B</b-button>
+                <b-button v-b-toggle="'collapse-a collapse-b'" class="mx-2">
+                    Toggle Collapse A and B
+                </b-button>
 
                 <!-- Via array of string IDs passed to directive value -->
-                <b-button v-b-toggle="['collapse-a', 'collapse-b']"
-                    >Toggle Collapse A and B</b-button
-                >
+                <b-button v-b-toggle="['collapse-a', 'collapse-b']">
+                    Toggle Collapse A and B
+                </b-button>
 
                 <!-- Elements to collapse -->
                 <b-collapse id="collapse-a" class="mt-2">
