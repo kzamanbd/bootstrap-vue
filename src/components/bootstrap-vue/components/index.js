@@ -6,6 +6,7 @@ import { ButtonPlugin } from './button';
 import { CollapsePlugin } from './collapse';
 import { ModalPlugin } from './modal';
 import { SkeletonPlugin } from './skeleton';
+import { TooltipPlugin } from './tooltip';
 
 // Main plugin to install all component group plugins
 export const componentsPlugin = /*#__PURE__*/ pluginFactory({
@@ -14,6 +15,7 @@ export const componentsPlugin = /*#__PURE__*/ pluginFactory({
         ButtonPlugin,
         CollapsePlugin,
         ModalPlugin,
-        SkeletonPlugin
+        SkeletonPlugin,
+        TooltipPlugin
     }
 });
